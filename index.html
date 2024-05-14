@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div>
+        <a href="index.html">Chas Aria</a>
+      </div>
+      <div>
+        <button id="menuBtn">Menu</button>
+        <nav id="menuContent" role="navigation">
+          <ul>
+            <li><a href="#">Hem</a></li>
+            <li><a href="#">Om oss</a></li>
+            <li><a href="#">Tjänster</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <section>
+        <h1>Aria Components Workshop at Chas Academy</h1>
+        <p>This is an example how to use a Modal Window and a Dialog Window:</p>
+        <button id="openModelBtn" onclick="openModal()">
+          Open Modal Window
+        </button>
+        <button id="openDialogBtn" onclick="openDialog()">
+          Open Dialog Window
+        </button>
+      </section>
+    </main>
+    <footer>
+      <p>Footer</p>
+    </footer>
+    <div id="accessibleModal">
+      <h2>Exempel på modalfönster</h2>
+      <p>Här är lite text i modalfönstret.</p>
+      <button id="closeModalBtn" onclick="closeModal()">Stäng</button>
+    </div>
+    <dialog id="accessibleDialog">
+      <h2>Exempel på tillgängligt modalfönster med &lt;dialog&gt;</h2>
+      <p>Här är innehållet i modalfönstret.</p>
+      <button id="closeDialogBtn" onclick="closeDialog()">Stäng</button>
+    </dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
